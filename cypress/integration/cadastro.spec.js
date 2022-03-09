@@ -5,7 +5,7 @@ var chance = new Chance()
 
 
 describe('Cadastro', () => {
-    it('Quando eu informar os dados e finalizar, então o cadastro dece ser efetuado', () => {
+    it('Quando eu informar os dados e finalizar, então o cadastro deve ser efetuado', () => {
 
         cy.visit('http://automationpractice.com/')
 

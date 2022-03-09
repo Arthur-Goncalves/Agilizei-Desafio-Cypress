@@ -1,0 +1,26 @@
+{
+  "name": "auto-practice",
+  "version": "1.0.0",
+  "description": "Projeto de desafio para praticar automação",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "report:merge": "mochawesome-merge > index.json",
+    "report:mocha": "marge index.json",
+    "report:clean": "rimraf mochawesome-report index.json"
+  },
+  "author": "Arthur Gonçalves",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^9.5.1",
+    "cypress-multi-reporters": "^1.5.0",
+    "mochawesome": "^7.1.2",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.1.1"
+  },
+  "dependencies": {
+    "chance": "^1.1.8"
+  }
+}

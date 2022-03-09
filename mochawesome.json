@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-09T16:49:42.285Z",
+    "end": "2022-03-09T16:50:11.120Z",
+    "duration": 28835,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eabb7341-b0ff-449b-81f4-85b4cade9411",
+      "title": "",
+      "fullFile": "cypress/integration/cadastro.spec.js",
+      "file": "cypress/integration/cadastro.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0b05f5e3-34e9-415e-9a9b-878d5bfe69da",
+          "title": "Cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Quando eu informar os dados e finalizar, então o cadastro dece ser efetuado",
+              "fullTitle": "Cadastro Quando eu informar os dados e finalizar, então o cadastro dece ser efetuado",
+              "timedOut": null,
+              "duration": 21556,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://automationpractice.com/');\ncy.get('.login').click();\ncy.get('title').should('have.text', 'Login - My Store');\ncy.get('input[name=\"SubmitCreate\"]').should('have.value', 'Create an account');\ncy.get('input[id=\"email_create\"]').type(chance.email());\ncy.get('#SubmitCreate').click();\ncy.get('.page-heading').should('have.text', 'Create an account');\ncy.get('input[id=\"id_gender1\"]').check();\ncy.get('input[name=\"customer_firstname\"]').type(chance.first());\ncy.get('input[name=\"customer_lastname\"]').type(chance.last());\ncy.get('#passwd').type('Agilizei@22');\ncy.get('select[name=\"days\"]').select('17');\ncy.get('select[name=\"months\"]').select('May');\ncy.get('select[id=\"years\"]').select('2002');\ncy.get('input[id=\"newsletter\"]').check();\ncy.get('input[id=\"address1\"]').type(chance.address());\ncy.get('input[id=\"city\"]').type('Miami');\ncy.get('select[name=\"id_state\"]').select('Florida');\ncy.get('input[id=\"postcode\"]').type('33122');\ncy.get('textarea[id=\"other\"]').type('11999999999');\ncy.get('input[name=\"phone_mobile\"]').type('11999999999');\ncy.get('button[id=\"submitAccount\"]').click();\ncy.get('title').should('have.text', 'My account - My Store');\ncy.get('span[class=\"navigation_page\"]').should('have.text', 'My account');",
+              "err": {},
+              "uuid": "bf6949ca-56ea-4d80-ab82-80a99d24b416",
+              "parentUUID": "0b05f5e3-34e9-415e-9a9b-878d5bfe69da",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bf6949ca-56ea-4d80-ab82-80a99d24b416"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21556,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.1.1"
+    }
+  }
+}
